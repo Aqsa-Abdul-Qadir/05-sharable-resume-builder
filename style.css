@@ -1,0 +1,63 @@
+body{
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: rgba(25, 10, 66, 0.801);
+     color: aliceblue;
+}
+
+.form-container {
+    
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #9c9292;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(59, 58, 58, 0.1);
+}
+legend{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-weight: 600;
+    text-decoration:underline;
+    color: rgba(25, 10, 66, 0.801);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+
+  ::placeholder{
+    color: rgba(25, 10, 66, 0.801);
+    
+   
+  }
+
+  input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: rgba(226, 223, 236, 0.801);
+    border-radius: 10px;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    background-color: #7a5230;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  button:hover {
+    background-color: #9c6e46;
+  }
+
+  
+  
+  

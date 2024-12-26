@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Shareable Resume Builder</h1>
+        <form id="resume-form">
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter Your Username" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+            </fieldset>
+
+            <!-- Education Section -->
+            <fieldset>
+                <legend>Education</legend>
+                <div id="education-section">
+                    <div class="education-entry">
+                        <label for="degree">Degree:</label>
+                        <input type="text" name="degree" placeholder="Enter Your Degree" required>
+                        
+                        <label for="institution">Institution:</label>
+                        <input type="text" name="institution" placeholder="Enter Your Institution" required>
+                        
+                        <label for="year">Year:</label>
+                        <input type="text" name="year" placeholder="Enter the Year" required>
+                    </div>
+                </div>
+                <button type="button" id="add-education">Add More Education</button>
+            </fieldset>
+
+            <!-- Skills Section -->
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skills">Skills (comma-separated):</label>
+                <input type="text" id="skills" name="skills" placeholder="Enter Your Skills" required>
+            </fieldset>
+
+            <!-- Work Experience Section -->
+            <fieldset>
+                <legend>Work Experience</legend>
+                <div id="work-section">
+                    <div class="work-entry">
+                        <label for="job-title">Job Title:</label>
+                        <input type="text" name="job-title" placeholder="Enter Your Job Title" required>
+                        
+                        <label for="company">Company:</label>
+                        <input type="text" name="company" placeholder="Enter Your Company" required>
+                        
+                        <label for="duration">Duration:</label>
+                        <input type="text" name="duration" placeholder="Enter the Duration" required>
+                    </div>
+                </div>
+                <button type="button" id="add-work">Add More Work Experience</button>
+            </fieldset>
+
+            <!-- Generate Button -->
+            <button type="submit"><b>Generate Resume</b></button>
+        </form>
+
+        <!-- Shareable Resume Builder-->
+        <div id="generated-resume" contenteditable="true" class="resume-display">
+            <!-- Resume will be generated here -->
+        </div>
+    </div>
+
+    <!-- Sharable Link Section -->
+    <div id="sharable-link-container" style="display: none;">
+        <h2>Sharable Link</h2>
+        <p>Here is your unique link to view and edit your resume:</p>
+        <a href="#" id="Shareable-link" target="_blank"></a>
+        <br>
+        <button id="download-pdf"><b>Download as PDF</b></button>
+    </div>
+    
+    <script src="script.js" type="module"></script>
+</body>
+</html>
